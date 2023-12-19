@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './example.component.html',
   styleUrl: './example.component.scss'
 })
-export class ExampleComponent {
+interface Item {title: string; url: string;}
 
+export class ExampleComponent {
+  items: Item[] = [
+    {title: "Hello World", url: "/hello"},
+    {title: "Hello World", url: "/hello"},
+    {title: "Hello World", url: "/hello"}
+  ];
+  select() {
+    console.log("Select hier");
+  }
 }

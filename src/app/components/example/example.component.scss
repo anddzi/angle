@@ -1,0 +1,18 @@
+.bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .item-bar{
+        background: antiquewhite;
+        padding: 1rem;
+        cursor: pointer; 
+        &:hover {
+            background: rgb(248, 181, 94);
+        }   
+    }
+    .active {
+        background: rgb(110, 77, 34);;
+    }
+}
