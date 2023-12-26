@@ -1,9 +1,11 @@
 <ul class="bar">
-    <li 
+  <!-- <li 
     class="item-bar active"
     (click)="select()"
     >Hello World!</li>
     <li class="item-bar">Hello World!</li>
-    <li class="item-bar">Hello World!</li>
-    <li class="item-bar">Hello World!</li>
+    <li class="item-bar">Hello World!</li> -->
+  <li class="item-bar" *ngFor="let item of items">
+    <a [href]="item.url">{{ item.title }}</a>
+</li>
 </ul>
